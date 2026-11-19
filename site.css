@@ -312,20 +312,3 @@ p { margin: 0; }
 .home .back-eyceline:hover { border-color: var(--film-accent); color: var(--film-accent); }
 @media (max-width: 520px) { .back-eyceline { padding: 4px 8px; font-size: .74rem; } .site-header .site-nav { gap: 4px 10px; } }
 @media (max-width: 400px) { .site-header .brand span { display: none; } }
-
-/* Pilot sites offer */
-.pilot-note { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0; padding: 10px 14px; border: 1px solid var(--film-line); border-left: 3px solid var(--mark); border-radius: 8px; background: var(--film-2); color: var(--film-ink); font-size: .92rem; line-height: 1.45; max-width: 46rem; }
-.pilot-note b { font: 600 .66rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mark); }
-.pilot-note a { color: var(--film-accent); font-weight: 600; white-space: nowrap; }
-.pilot-tag { display: inline-block; font: 600 .64rem/1 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: #fff; background: var(--mark); padding: 4px 7px; border-radius: 4px; margin-right: 6px; vertical-align: 2px; }
-
-.pilot-star { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 14px; max-width: 46rem; padding: 12px 16px; border-radius: 12px; text-decoration: none; color: var(--film-ink); background: linear-gradient(110deg, rgba(224,85,155,.22), rgba(124,198,230,.14)); border: 1px solid rgba(224,85,155,.55); box-shadow: 0 10px 30px -14px rgba(224,85,155,.6); transition: transform .15s ease, box-shadow .15s ease; }
-.pilot-star:hover { transform: translateY(-1px); box-shadow: 0 14px 34px -12px rgba(224,85,155,.75); }
-.pilot-star .star { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--mark); color: #fff; font-size: 1.3rem; animation: pilot-pulse 2.4s ease-in-out infinite; }
-.pilot-star .ps-t { display: grid; gap: 2px; font-size: .9rem; line-height: 1.4; }
-.pilot-star .ps-t b { font: 600 .68rem/1.3 var(--font-mono); letter-spacing: .1em; text-transform: uppercase; color: #F7A8CF; }
-.pilot-star .ps-go { font-weight: 600; color: var(--film-accent); white-space: nowrap; }
-@keyframes pilot-pulse { 0%,100% { box-shadow: 0 0 0 0 rgba(224,85,155,.55); } 50% { box-shadow: 0 0 0 8px rgba(224,85,155,0); } }
-@media (prefers-reduced-motion: reduce) { .pilot-star .star { animation: none; } }
-@media (max-width: 600px) { .pilot-star { grid-template-columns: auto 1fr; } .pilot-star .ps-go { grid-column: 2; } }
-.nav-pilot { color: var(--mark) !important; font-weight: 600; }
